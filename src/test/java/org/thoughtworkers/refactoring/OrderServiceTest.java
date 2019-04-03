@@ -9,7 +9,7 @@ public class OrderServiceTest {
     @Test
     public void should_calculate_premium_discount_amount() {
         OrderService orderService = new OrderService();
-        double pda = orderService.getPDA(1);
+        double pda = orderService.getPDA(101);
         assertThat(pda, is(15.0));
     }
 }
