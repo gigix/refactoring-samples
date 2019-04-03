@@ -4,6 +4,6 @@ public class OrderService {
 
     public double getPDA(long orderId) {
         Order order = Order.load(orderId);
-        return order.getPDA();
+        return order.getPremiumDiscountAmount();
     }
 }
