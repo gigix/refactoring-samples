@@ -10,7 +10,7 @@ public class Order {
     }
 
     public double getPDA() {
-        return isPremium ? totalAmount * .15 : 0;
+        return getPremiumDiscountAmount();
     }
 
     public double getPremiumDiscountAmount() {
