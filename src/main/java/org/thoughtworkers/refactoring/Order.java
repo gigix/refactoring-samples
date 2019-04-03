@@ -13,6 +13,10 @@ public class Order {
         return isPremium ? totalAmount * .15 : 0;
     }
 
+    public double getPremiumDiscountAmount() {
+        return isPremium ? totalAmount * .15 : 0;
+    }
+
     public static Order load(long orderId) {
         return new Order(100, true);
     }
